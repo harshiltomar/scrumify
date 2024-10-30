@@ -17,7 +17,17 @@ export default function RootLayout({ children }) {
   return (
     <ClerkProvider
       appearance={{
-        baseTheme:shadesOfPurple
+        baseTheme:shadesOfPurple,
+        variables: {
+          colorPrimary: '#3b82f6',
+          colorBackground: '#1a202c',
+          colorInputBackground: '#2D3748',
+          colorInputText: '#F3F4F6',
+        },
+        elements: {
+          formButtonPrimary:'bg-blue-600 hover:bg-blue-700 text-white',
+          card: 'bg-gray-800'
+        }
       }}
     >
       <html lang="en">
